@@ -1,0 +1,23 @@
+<h1>Test Page</h1>
+
+<script>
+
+let data = {
+    firstname: 'Travis',
+    lastname: 'Aucoin',
+    email: 'twda96@gmail.com',
+    address: '460 S 2nd W',
+}
+
+console.log(data);
+
+console.log(Object.entries(data)); //Key value pairs
+console.log(Object.entries(data).length - 1); //0 indexed length
+
+Object.entries(data).forEach(e => {
+    // console.log(e); //Key value pair
+    console.log(e[0]); //Key
+    console.log(e[1]); //Value
+});
+
+</script>

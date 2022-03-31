@@ -1,0 +1,174 @@
+.react-eventForm-container {
+    // padding-left: 20px !important;
+    display: grid !important; 
+    grid-template-columns: 13.5em 13.5em !important;
+    /* grid-template-rows: 1fr 1fr !important;  */
+    gap: 30px !important;
+    grid-template-areas: 
+      "topLeft topRight ."
+      "bottom bottom ."
+      ". . ." !important; 
+  }
+  .react-eventForm-topLeft { grid-area: topLeft !important; }
+  .react-eventForm-topRight { grid-area: topRight !important; }
+  .react-eventForm-bottom { grid-area: bottom !important; display: flex !important; flex-direction: column !important; }
+  
+  .react-eventForm-title{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    h1{
+        margin: 0 !important;
+    }
+    p{
+        margin-bottom: 0 !important;
+    }
+  }
+
+  .react-eventForm-input{
+      display: block !important;
+      margin-bottom: 15px !important;
+      background-color: rgb(244,244,244) !important;
+      border: none !important;
+      height: 2em !important;
+      width: 15em !important;
+      &::placeholder{
+        color: gray !important;
+      }
+  }
+
+  .react-eventForm-display-flex{
+      display: flex !important;
+      border-bottom: 1px solid lightgray !important;
+      padding-bottom: 2em !important;
+  }
+
+  .react-eventForm-flex-center{
+      flex-direction: column !important;
+  }
+
+  .react-eventForm-flex-column{
+      display: flex !important;
+      flex-direction: column !important;
+  }
+
+  .react-eventForm-buttons{
+      width: 10em !important;
+      height: 2em;
+      font-size: 1em;
+      margin-bottom: 5px !important;
+      margin-top: 10px !important;
+      background-color: rgb(63,134,190) !important;
+      color: white !important;
+      border: none !important;
+      cursor: pointer !important;
+      &:disabled{
+        background-color: lightgrey !important;
+        cursor: not-allowed !important;
+    }
+  }
+
+  .react-eventForm-myself{
+      margin-bottom: 15px !important;
+  }
+
+  .react-eventForm-wrapper{
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+  }
+  
+  .react-eventForm-wide-input{
+      width: 31em !important;
+      margin-top: 0 !important;
+  }
+  
+  textarea.react-eventForm-wide-input{
+      height: 10em !important;
+      background-color: rgb(244,244,244) !important;
+      border: none !important;
+      &::placeholder{
+        color: gray !important;
+      }
+  }
+  
+  input.react-eventForm-wide-input{
+      margin-bottom: 10px !important;
+      background-color: rgb(244,244,244) !important;
+      border: none !important;
+      height: 2em !important;
+      width: 31em !important;
+      &::placeholder{
+        color: gray !important;
+      }
+  }
+
+  //////////////////////////////////////////////////
+
+  .react-eventForm-centerNoData{
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+  }
+
+  .react-eventForm-dependents{
+      margin-top: 1.5em !important;
+      display: flex !important;
+      justify-content: space-between !important;
+  }
+
+  //Vertically centers the checkbox with the label text
+  .react-eventForm-checkbox{
+    position: relative !important;
+    vertical-align: middle !important;
+    bottom: 1px !important;
+    height: 1.5em !important;
+    width: 1.5em !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .react-eventForm-dependentsList{
+    display: flex !important;
+    flex-direction: column !important;
+    border-right: 1px solid lightgrey !important;
+    padding-right: 2em !important;
+    input{
+        display: inline !important;
+    }
+  }
+
+  .react-eventForm-editDependent{
+      margin-left: 5px !important;
+      border: 1px solid rgb(49,127,187) !important;
+      color: white !important;
+      background-color: rgb(49,127,187) !important;
+      cursor: pointer !important;
+      &:disabled{
+          background-color: lightgrey !important;
+          cursor: not-allowed !important;
+          border: none !important;
+      }
+  }
+
+
+  .react-eventForm-center-vertical{
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .react-eventForm-margin-right{
+    margin-right: 20px !important;
+  }
+  
+  .react-eventForm-color-green{
+    background-color: rgb(40,167,69) !important;
+  }
+
+  .react-eventForm-color-crimson{
+    background-color: crimson !important;
+  }
+
+  .react-eventForm-bold{
+    font-weight: bold;
+  }

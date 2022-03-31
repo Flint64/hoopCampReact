@@ -1,13 +1,280 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.react-eventForm-container {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: 13.5em 13.5em !important;
+      grid-template-columns: 13.5em 13.5em !important;
+  /* grid-template-rows: 1fr 1fr !important;  */
+  gap: 30px !important;
+      grid-template-areas: "topLeft topRight ." "bottom bottom ." ". . ." !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.react-eventForm-topLeft {
+  -ms-grid-row: 1 !important;
+  -ms-grid-column: 1 !important;
+  grid-area: topLeft !important;
 }
+
+.react-eventForm-topRight {
+  -ms-grid-row: 1 !important;
+  -ms-grid-column: 2 !important;
+  grid-area: topRight !important;
+}
+
+.react-eventForm-bottom {
+  -ms-grid-row: 2 !important;
+  -ms-grid-column: 1 !important;
+  -ms-grid-column-span: 2 !important;
+  grid-area: bottom !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.react-eventForm-title {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.react-eventForm-title h1 {
+  margin: 0 !important;
+}
+
+.react-eventForm-title p {
+  margin-bottom: 0 !important;
+}
+
+.react-eventForm-input {
+  display: block !important;
+  margin-bottom: 15px !important;
+  background-color: #f4f4f4 !important;
+  border: none !important;
+  height: 2em !important;
+  width: 15em !important;
+}
+
+.react-eventForm-input::-webkit-input-placeholder {
+  color: gray !important;
+}
+
+.react-eventForm-input:-ms-input-placeholder {
+  color: gray !important;
+}
+
+.react-eventForm-input::-ms-input-placeholder {
+  color: gray !important;
+}
+
+.react-eventForm-input::placeholder {
+  color: gray !important;
+}
+
+.react-eventForm-display-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  border-bottom: 1px solid lightgray !important;
+  padding-bottom: 2em !important;
+}
+
+.react-eventForm-flex-center {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.react-eventForm-flex-column {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.react-eventForm-buttons {
+  width: 10em !important;
+  height: 2em;
+  font-size: 1em;
+  margin-bottom: 5px !important;
+  margin-top: 10px !important;
+  background-color: #3f86be !important;
+  color: white !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.react-eventForm-buttons:disabled {
+  background-color: lightgrey !important;
+  cursor: not-allowed !important;
+}
+
+.react-eventForm-myself {
+  margin-bottom: 15px !important;
+}
+
+.react-eventForm-wrapper {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.react-eventForm-wide-input {
+  width: 31em !important;
+  margin-top: 0 !important;
+}
+
+textarea.react-eventForm-wide-input {
+  height: 10em !important;
+  background-color: #f4f4f4 !important;
+  border: none !important;
+}
+
+textarea.react-eventForm-wide-input::-webkit-input-placeholder {
+  color: gray !important;
+}
+
+textarea.react-eventForm-wide-input:-ms-input-placeholder {
+  color: gray !important;
+}
+
+textarea.react-eventForm-wide-input::-ms-input-placeholder {
+  color: gray !important;
+}
+
+textarea.react-eventForm-wide-input::placeholder {
+  color: gray !important;
+}
+
+input.react-eventForm-wide-input {
+  margin-bottom: 10px !important;
+  background-color: #f4f4f4 !important;
+  border: none !important;
+  height: 2em !important;
+  width: 31em !important;
+}
+
+input.react-eventForm-wide-input::-webkit-input-placeholder {
+  color: gray !important;
+}
+
+input.react-eventForm-wide-input:-ms-input-placeholder {
+  color: gray !important;
+}
+
+input.react-eventForm-wide-input::-ms-input-placeholder {
+  color: gray !important;
+}
+
+input.react-eventForm-wide-input::placeholder {
+  color: gray !important;
+}
+
+.react-eventForm-centerNoData {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.react-eventForm-dependents {
+  margin-top: 1.5em !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.react-eventForm-checkbox {
+  position: relative !important;
+  vertical-align: middle !important;
+  bottom: 1px !important;
+  height: 1.5em !important;
+  width: 1.5em !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.react-eventForm-dependentsList {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  border-right: 1px solid lightgrey !important;
+  padding-right: 2em !important;
+}
+
+.react-eventForm-dependentsList input {
+  display: inline !important;
+}
+
+.react-eventForm-editDependent {
+  margin-left: 5px !important;
+  border: 1px solid #317fbb !important;
+  color: white !important;
+  background-color: #317fbb !important;
+  cursor: pointer !important;
+}
+
+.react-eventForm-editDependent:disabled {
+  background-color: lightgrey !important;
+  cursor: not-allowed !important;
+  border: none !important;
+}
+
+.react-eventForm-center-vertical {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.react-eventForm-margin-right {
+  margin-right: 20px !important;
+}
+
+.react-eventForm-color-green {
+  background-color: #28a745 !important;
+}
+
+.react-eventForm-color-crimson {
+  background-color: crimson !important;
+}
+
+.react-eventForm-bold {
+  font-weight: bold;
+}
+/*# sourceMappingURL=index.css.map */
